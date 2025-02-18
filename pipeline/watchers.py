@@ -24,10 +24,10 @@ class RawDataHandler(FileSystemEventHandler):
     Watches raw_experiment_data dir,
     Triggers step1_extract.py.
     """
-    def on_created(self, event):
-        if event.is_directory:
-            return
-        if event.src_path.endswith(".json"):
+    def on_modified(self, event):
+        # Changed on_creted to on_modified:
+        # To avoid reading a JSON that hasn´t finish writting in memory.
+        if not event.is_directory and event.src_path.endswith(".json"):
             extract_relevant_data(event.src_path, STEP1_OUT_DIR)
 
 
