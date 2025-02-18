@@ -22,5 +22,5 @@ def get_experiment_id_from_path(filepath):
     or step1_output/0002.json -> '0002'
     """
     filename = os.path.basename(filepath)
-    experiment_id, _ = os.path.splittext(filename)
+    experiment_id, _ = os.path.splitext(filename)
     return experiment_id
