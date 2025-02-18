@@ -38,5 +38,5 @@ def validate_hypothesis_per_experiment(input_filepath, output_dir):
     output_filepath = os.path.join(output_dir, f"{experiment_id}.json")
     write_json_file(output_filepath, result)
 
-    print(f"[Step 2] Experiment {experiment_id} hypothesis validation: {hypotheis_is_valid}")
+    print(f"[Step 2] Experiment {experiment_id} hypothesis validation: {hypothesis_is_valid}")
     return output_filepath
