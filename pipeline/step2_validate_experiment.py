@@ -28,7 +28,7 @@ def validate_hypothesis_per_experiment(input_filepath, output_dir):
     else:
         mean_neuron = mean(neuron_in_vivo_responses)
         mean_others = mean(non_neuron_in_vivo_responses)
-        hypothesis_is_valid (mean_neuron > mean_others)
+        hypothesis_is_valid = (mean_neuron > mean_others)
 
     result = {
         "experiment_id": experiment_id,
