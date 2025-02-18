@@ -1,0 +1,12 @@
+[
+  {
+    "cell_type": "Neuron",
+    "environment": "In vivo",
+    "cell_response": 8.5
+  },
+  {
+    "cell_type": "Glia",
+    "environment": "In vivo",
+    "cell_response": 6.0
+  }
+]
